@@ -24,6 +24,47 @@
             color: #333;
         }
         
+        /* סגנון הלוגו בכותרת */
+        .header-logo-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 0 20px;
+        }
+        
+        .header-logo {
+            width: 120px;
+            height: auto;
+            transition: transform 0.3s ease;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+        }
+        
+        .header-logo:hover {
+            transform: scale(1.1);
+        }
+        
+        .center-content {
+            flex: 1;
+            text-align: center;
+        }
+        
+        /* לוגו נוסף במרכז הכותרת */
+        .main-logo {
+            width: 100px;
+            height: auto;
+            margin: 0 auto 20px auto;
+            display: block;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -96,6 +137,16 @@
             background: #34495e;
             color: white;
             border-radius: 10px;
+            position: relative;
+        }
+        
+        /* לוגו בפוטר */
+        .footer-logo {
+            width: 60px;
+            height: auto;
+            margin: 0 auto 15px auto;
+            display: block;
+            opacity: 0.8;
         }
         
         .keywords {
@@ -148,15 +199,48 @@
             margin-bottom: 15px;
             font-size: 1.4em;
         }
+        
+        /* רספונסיביות */
+        @media (max-width: 768px) {
+            .header-logo-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .header-logo {
+                width: 80px;
+            }
+            
+            .main-logo {
+                width: 70px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .motto {
+                font-size: 1.4em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>כיתה ו'2</h1>
-            <div class="subtitle">ת"ת יקירי רכסים</div>
-            <div class="motto">מצטיינים זו לא סתם סיסמא</div>
-        </header>
+        <!-- לוגו בכותרת - בשני הצדדים -->
+        <div class="header-logo-container">
+            <img src="ו חמש י גדול.png" alt="ו' התעשייה" class="header-logo">
+            <div class="center-content">
+                <!-- לוגו מרכזי -->
+                <img src="ו חמש י גדול.png" alt="ו' התעשייה" class="main-logo">
+                <header>
+                    <h1>כיתה ו'2</h1>
+                    <div class="subtitle">ת"ת יקירי רכסים</div>
+                    <div class="motto">מצטיינים זו לא סתם סיסמא</div>
+                </header>
+            </div>
+            <img src="ו חמש י גדול.png" alt="ו' התעשייה" class="header-logo">
+        </div>
         
         <main>
             <section class="section teacher-info">
@@ -197,6 +281,7 @@
         </div>
         
         <footer class="footer">
+            <img src="ו חמש י גדול.png" alt="ו' התעשייה" class="footer-logo">
             <p>&copy; 2025 כיתה ו'2 - ת"ת יקירי רכסים | בהנהגת הרב דוד וייס</p>
             <p>מצטיינים זו לא סתם סיסמא</p>
         </footer>
