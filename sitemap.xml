@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://meniman26.github.io/kitah-6-2-website/</loc>
-    <lastmod>2025-06-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- דף הבית הראשי -->
+    <url>
+        <loc>https://meniman26.github.io/kitah-6-2-website/</loc>
+        <lastmod>2025-06-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- דף ה-HTML הראשי -->
+    <url>
+        <loc>https://meniman26.github.io/kitah-6-2-website/index.html</loc>
+        <lastmod>2025-06-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- דף הכיתה בCanva -->
+    <url>
+        <loc>https://vav2.my.canva.site/#%D7%93%D7%A3-%D7%94%D7%91%D7%99%D7%AA-%D7%9B%D7%99%D7%AA%D7%94-%D7%95-2</loc>
+        <lastmod>2025-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- תמונת הלוגו -->
+    <url>
+        <loc>https://meniman26.github.io/kitah-6-2-website/logo.png</loc>
+        <lastmod>2025-06-25</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
 </urlset>
